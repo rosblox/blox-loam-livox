@@ -1,0 +1,135 @@
+{
+  "configById": {
+    "3D!2x5h5vh": {
+      "cameraState": {
+        "perspective": true,
+        "distance": 9.26582460318459,
+        "phi": 83.00148588411572,
+        "thetaOffset": 164.01931649331402,
+        "targetOffset": [
+          0.5975004409730371,
+          2.1235223315443825,
+          2.8295619615395197e-17
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-none",
+      "followTf": "aft_mapped",
+      "scene": {
+        "backgroundColor": "#000000"
+      },
+      "transforms": {},
+      "topics": {
+        "/pc2_full": {
+          "visible": false,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo",
+          "pointSize": 3
+        },
+        "/livox/lidar": {
+          "visible": true,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/laser_cloud_surround": {
+          "visible": true,
+          "colorField": "intensity",
+          "colorMode": "flat",
+          "colorMap": "turbo",
+          "pointSize": 7,
+          "decayTime": 0
+        },
+        "/laser_cloud_map": {
+          "visible": false
+        },
+        "/laser_cloud_flat": {
+          "visible": false
+        },
+        "/pc2_corners": {
+          "visible": false,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/pc2_surface": {
+          "visible": false,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/pc_aft_loop_closure": {
+          "visible": false
+        },
+        "/pc_debug": {
+          "visible": false
+        },
+        "/aft_loopclosure_path": {
+          "visible": false,
+          "lineWidth": 30
+        },
+        "/aft_mapped_path": {
+          "visible": true,
+          "lineWidth": 0.024999999999999988,
+          "type": "line"
+        },
+        "/features_corners": {
+          "visible": false
+        },
+        "/features_surface": {
+          "visible": false
+        },
+        "/laser_cloud_less_flat": {
+          "visible": false
+        },
+        "/laser_cloud_less_sharp": {
+          "visible": false
+        },
+        "/laser_points_2": {
+          "visible": false
+        },
+        "/laser_cloud_sharp": {
+          "visible": false
+        },
+        "/velodyne_cloud_registered": {
+          "visible": true,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo",
+          "decayTime": 1
+        }
+      },
+      "layers": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      }
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "linkedGlobalVariables": [],
+  "playbackConfig": {
+    "speed": 5
+  },
+  "layout": "3D!2x5h5vh"
+}
