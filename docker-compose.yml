@@ -35,8 +35,5 @@ services:
     image: ghcr.io/rosblox/ros-loam-livox:melodic
     restart: always
     command: roslaunch loam_livox livox.launch rviz:=false
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
     environment:
-      - DISPLAY      
       - ROS_HOSTNAME=ros-loam-livox
